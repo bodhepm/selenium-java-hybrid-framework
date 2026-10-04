@@ -12,7 +12,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'mvn clean test -Dbrowser=chrome'
+                bat '"C:\\apache-maven\\apache-maven-3.9.16\\bin\\mvn.cmd" clean test -Dbrowser=chrome'
             }
         }
     }
